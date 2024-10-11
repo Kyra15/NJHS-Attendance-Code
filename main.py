@@ -5,14 +5,14 @@ slist = []
 extra = []
 masterlist = []
 
-with open("masterlist.csv", 'r') as fp:
+with open("masterlist.csv", 'r') as fp: # put the list of all names
     lines = len(fp.readlines())
 
 number_of_members = lines
 
 
 def people_attended(slist):
-    with open('njhs5-8.csv', mode='r') as csv_file:
+    with open('njhs5-8.csv', mode='r') as csv_file: # put your google form file name here
         csv_reader = csv.reader(csv_file)
         line_count = 0
         for row in csv_reader:
